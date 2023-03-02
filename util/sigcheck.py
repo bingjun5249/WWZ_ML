@@ -23,7 +23,7 @@ SF = 60.153418066624916
 
 
 
-infile = '/home/bjpark/WWZ/ML/DNN/storage/run_files/total/trial'+trial+'/total_prediction.csv'
+infile = '/u/user/bingjun5249/SE_UserHome/WWZ/DNN/storate/run/trial'+trial+'/total_prediction.csv'
 
 df = pd.read_csv(infile)
 

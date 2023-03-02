@@ -9,29 +9,25 @@ args = parser.parse_args()
 
 trial = args.trial
 
-channel = ['eeee','eeem','eemm','emmm','mmmm']
-combine = ['even','odd']
-total = ['total']
 
-for ch in total:
-	## Read csv
-	ch_file = "/home/bjpark/WWZ/ML/DNN/storage/run_files/" + ch + "/trial"+trial+"/" + ch + "_history.csv"
+## Read csv
+ch_file = "/u/user/bingjun5249/SE_UserHome/WWZ/DNN/storate/run/trial"+trial+"/total_history.csv"
 
-	df = pd.read_csv(ch_file)
+df = pd.read_csv(ch_file)
 
-	## Draw acc and loss
+## Draw acc and loss
 
-	# eee channel
-	df[['train_loss', 'val_loss']].plot()
-	plt.grid()
-	plt.text(200,2000,'('+ch+' channel)', fontsize=20)
-	plt.savefig(''+ch+'_loss')
-	plt.close()
+# eee channel
+df[['train_loss', 'val_loss']].plot()
+plt.grid()
+plt.text(200,2000,'('+ch+' channel)', fontsize=20)
+plt.savefig(''+ch+'_loss')
+plt.close()
 
-	df[['train_accuracy', 'val_accuracy']].plot()
-	plt.grid()
-	plt.text(200,2000,'('+ch+' channel)', fontsize=20)
-	plt.savefig(''+ch+'_acc')
-	plt.close()
+df[['train_accuracy', 'val_accuracy']].plot()
+plt.grid()
+plt.text(200,2000,'('+ch+' channel)', fontsize=20)
+plt.savefig(''+ch+'_acc')
+plt.close()
 
 

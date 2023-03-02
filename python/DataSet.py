@@ -7,7 +7,7 @@ import pandas as pd
 import sklearn
 
 ## Read ntuple
-infile = "/home/bjpark/WWZ/ML/DNN/data/pe_po.h5"
+infile = "/u/user/bingjun5249/SE_UserHome/WWZ/DNN/data"
 
 df = pd.read_hdf(infile)
 
