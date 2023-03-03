@@ -6,4 +6,4 @@ python train.py --epoch $epoch --batch $batch --lr $lr
 python Eval.py --epoch $epoch --batch $batch --lr $lr
 
 
-source hand_out.sh
+#source hand_out.sh
